@@ -5,15 +5,14 @@ require('dotenv').config();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
-app.use(bodyParser.json());
-
 // Enable CORS
 app.use(cors({
     origin: ["https://restaurent-app-beta.vercel.app"], // Vercel frontend URL
-    methods: ["GET", "POST", "OPTIONS"], // Added OPTIONS method for preflight requests
-    credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"] // Allow necessary headers
+    methods: ["POST","GET"],
+    credentials: true
 }));
+
+app.use(bodyParser.json());
 
 // Import the router files
 const menuRoutes = require('./routes/menuRoutes');

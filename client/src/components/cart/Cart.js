@@ -92,8 +92,11 @@ const Cart = () => {
                         type="number"
                         value={item.quantity}
                         min="0"
+                        // onChange={(e) =>
+                        //   handleQuantityChange(index, parseInt(e.target.value))
+                        // }
                         onChange={(e) =>
-                          handleQuantityChange(index, parseInt(e.target.value))
+                          handleQuantityChange(index, Number(e.target.value))
                         }
                         style={{ width: "80px" }}
                       />
