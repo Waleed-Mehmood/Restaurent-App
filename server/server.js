@@ -9,9 +9,10 @@ app.use(bodyParser.json());
 
 // Enable CORS
 app.use(cors({
-    origin: ["https://restaurent-app-beta.vercel.app/"], // Vercel frontend URL
-    methods: ["POST","GET"],
-    credentials: true
+    origin: ["https://restaurent-app-beta.vercel.app"], // Vercel frontend URL
+    methods: ["GET", "POST", "OPTIONS"], // Added OPTIONS method for preflight requests
+    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"] // Allow necessary headers
 }));
 
 // Import the router files
