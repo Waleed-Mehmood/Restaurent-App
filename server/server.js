@@ -9,7 +9,8 @@ app.use(bodyParser.json());
 
 // Enable CORS
 app.use(cors({
-    origin: process.env.FRONTEND_URL, // Vercel frontend URL
+    origin: ["https://restaurent-app-beta.vercel.app/"], // Vercel frontend URL
+    methods: ["POST","GET"],
     credentials: true
 }));
 
