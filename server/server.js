@@ -21,6 +21,10 @@ const orderRoutes = require('./routes/orderRoutes');
 app.use('/menu', menuRoutes);
 app.use('/orders', orderRoutes);
 
+app.get("/", (req,res)=>{
+    res.json("Restaurent App")
+})
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
