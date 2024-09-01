@@ -26,6 +26,8 @@ const Cart = () => {
       .toFixed(2);
   };
 
+  axios.defaults.withCredentials = true;
+
   const handlePlaceOrder = async () => {
     const grandTotal = calculateGrandTotal();
   
