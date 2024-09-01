@@ -1,0 +1,50 @@
+/* Services Section */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #bd1c1d;
+  }
+  
+  .section-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  .services-section {
+    padding: 70px 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Service Card Styling */
+  .premium-service {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .premium-service:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-card .card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #000;
+  }
+  
+  .service-card .card-text {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  .service-image {
+    border-radius: 15px 15px 0 0;
+    height: 200px;
+    object-fit: cover;
+  }

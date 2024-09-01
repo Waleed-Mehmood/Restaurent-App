@@ -1,0 +1,12 @@
+.navbar-border-bottom {
+  border-bottom: 2px solid #BD1C1D;
+}
+
+.nav-link {
+  font-size: 19px !important; 
+  font-weight: 600 !important; 
+}
+
+.nav-link:hover{
+  color: #BD1C1D !important;
+}

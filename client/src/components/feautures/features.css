@@ -1,0 +1,30 @@
+/* Featured Dishes Section */
+.featured-dishes-section {
+    padding: 50px 0;
+  } */
+  
+  /* Card Styling */
+  .featured-dishes-section .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .featured-dishes-section .card-img-top {
+    height: 200px;
+  }
+  
+  .featured-dishes-section .card-body {
+    padding: 20px;
+  }
+  
+  .featured-dishes-section .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .featured-dishes-section .card-text {
+    font-size: 1rem;
+    color: #666;
+  }
